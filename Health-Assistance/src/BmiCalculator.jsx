@@ -89,11 +89,12 @@ export function BmiCalculator() {
             <div className="final-result">
               <div className="bmi">{bmi ? bmi.result : "00"}</div>
               <div className="bmi-unit"> Kg/m <sup>2</sup> </div>
-              <div className="normal-condition">Normal</div>
+              <div className="normal-condition">{bmi ? bmi.check : ""}</div>
             </div>
             <div className="define">
-              <p>You have a normal body weight.</p>
-              <p>Great job maintaing the healthy lifestyle.</p>
+              {bmi ?bmi.define.map((item, index) => {
+                return <p key={index}>{item}</p>
+              }) : <p>Enter your height and weight to calculate your BMI and know your health status.</p>}
             </div>
             <div className="recall">
               <div className="height-recall all-recall-box">

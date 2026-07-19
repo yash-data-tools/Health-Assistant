@@ -25,9 +25,35 @@ def calculate():
   age = data["age"]
 
   bmi = runBMI(height, weight)
+  condition = {
+    "underweight":["You are below the normal weight range.","Consider a nutrition plan to gain weight and maintain a healthy lifestyle."],
+    "normal": ["You have a normal body weight.","Great job maintaining the healthy lifestyle."],
+    "overweight":["You are above the normal weight range.","Regular exercise and a balanced diet can help you reach a healthier weight."],
+    "obese":["Your BMI indicates obesity.","Consult a healthcare professional for guidance on weight management and overall health."],
+    "severely obese":["Your BMI indicates severe obesity.","Seeking medical advice can help you improve your long-term health."]
+  }
+
+  if(float(bmi) < 18.5):
+    final_condition = condition["underweight"]
+    check = "Underweight"
+  elif(float(bmi) >= 18.5 and float(bmi) < 25):
+    final_condition = condition["normal"]
+    check = "Normal"
+  elif(float(bmi) >= 25 and float(bmi) < 30):
+    final_condition = condition["overweight"]
+    check = "Overweight"
+  elif(float(bmi) >= 30 and float(bmi) < 35):
+    final_condition = condition["obese"]
+    check = "Obese"
+  else:
+    final_condition = condition["severely obese"]
+    check = "Severely obese"
+
   return ({
     "result":bmi,
     "age":age,
     "height":height,
-    "weight":weight
+    "weight":weight,
+    "define":final_condition,
+    "check":check
   })

@@ -12,6 +12,10 @@
   gap: 20px;
 }
 
+.normal-condition {
+  margin-bottom: 10px;
+}
+
 .details {
   display: flex;
   border: 1px solid rgba(0,0,0,0.15);
