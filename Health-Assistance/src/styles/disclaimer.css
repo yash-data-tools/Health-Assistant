@@ -1,0 +1,22 @@
+.bottom-disclaimer {
+  position:fixed;
+  bottom: 20px;
+  left: 290px;
+  width: 75%;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(217, 255, 217);
+  display: flex;
+  gap: 10px;
+}
+
+.disclaimer {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.disclaimer-image {
+  width: 24px;
+  filter: invert(48%) sepia(82%) saturate(511%) hue-rotate(92deg) brightness(95%) contrast(92%);
+}

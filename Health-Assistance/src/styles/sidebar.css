@@ -1,0 +1,76 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 249px;
+  background-color: white;
+  align-items: center;
+  border-right: 1px solid rgba(202, 202, 202,0.35 ) ;
+  z-index: 100;
+}
+
+.sidebar-logo {
+  display: flex;
+  margin: 40px 30px 20px 30px;
+  gap: 15px;
+}
+.title {
+  font-size: 18px;
+}
+.title div {
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom:  1px solid rgb(202, 202, 202);
+  border-top:  1px solid rgb(202, 202, 202);
+}
+
+.section {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.section:hover {
+  background-color: rgb(192, 249, 192);
+  border-radius: 20px;
+}
+
+.section:hover img {
+  filter: invert(48%) sepia(82%) saturate(511%) hue-rotate(92deg) brightness(95%) contrast(92%);
+}
+
+.section.active {
+  background-color: rgb(192, 249, 192);
+  border-radius: 20px;
+}
+
+.section.active img {
+  filter: invert(48%) sepia(82%) saturate(511%) hue-rotate(92deg) brightness(95%) contrast(92%);
+}
+
+
+.information {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 20px;
+  gap: 10px;
+  border: 1px solid rgb(107, 255, 107);
+  border-radius: 20px;
+  background-color: rgb(180, 255, 180);
+  padding: 10px;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  color: rgb(0, 71, 0);
+}

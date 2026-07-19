@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  background-color: white;
+  height: 100px;
+  align-items: center;
+}
+
+.bmi-image {
+  width: 180px;
+  object-fit:cover; 
+  margin-right: 300px;
+  height: 100px;
+}
+
+.bmi-notice {
+  flex: 1;
+  margin-left: 20px;
+  color: gray;
+}
+
+
+
+.bmi-title {
+  margin-bottom: 12px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
