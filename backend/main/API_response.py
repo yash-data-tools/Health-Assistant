@@ -32,18 +32,30 @@ def Api(symptoms):
   '''
 
   # ask
+  try:
+    response = client.models.generate_content(
+      model="gemini-3.1-flash-lite",
 
-  response = client.models.generate_content(
-    model="gemini-3.5-flash",
+      # gemini-2.5-pro 
+      # Gemini 3.1 Flash Lite
+      # gemini-2.0-flash
+      # gemini-3.5-flash
+      contents=prompt
+  )
+    print("\n\nGemini called\n\n")
+    return response.text
+  except Exception as e:
+    print(f"Error occurred while calling Gemini API: {e}")
+    return '''
+      {
+  "possibleCauses":["Common cold","Flu","Allergies"],
+  "severity":"Low",
+  "advice":["Drink plenty of fluids","Rest","Take over-the-counter medications"],
+  "doctor":"General Practitioner",
+  "api-error":"Error occurred while processing the request. Please try again later."
+  }
 
-    # gemini-2.5-pro 
-    # Gemini 3.1 Flash Lite
-    # gemini-2.0-flash
-    # gemini-3.5-flash
-    contents=prompt
-)
-  return response.text
-
+'''
 
 # for model in client.models.list():
-#   print(model.name)
+#     print(model.name, model.supported_actions)

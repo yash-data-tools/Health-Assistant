@@ -54,7 +54,7 @@ export function HealthAssistant() {
         </div>
       </div>
       <Sidebar />
-      {result && (<div className="health-assist-page">
+      {result && (<div className="health-assist-page main-page">
         <div className="possible-cause main-content">
           <img src="images/possible_cause.png" alt="" className="main-image" />
           <h2>Possible Causes</h2>
@@ -69,7 +69,7 @@ export function HealthAssistant() {
         <div className="severity main-content">
           <img src="images/severity.png" alt="" className="main-image" />
           <h2>Severity</h2>
-          <div className="condition">{result.severity}</div>
+          <div className="result-condition">{result.severity}</div>
           <div>You symptoms indicates a {result.severity} severity. Monitor your condition closely.</div>
         </div>
         <div className="medical-advice main-content">

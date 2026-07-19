@@ -79,7 +79,7 @@ li::before {
   content: "🗹";
 }
 
-.condition {
+.result-condition {
   background-color: rgb(255, 230, 194);
   color: rgb(191, 124, 0);
   align-self:flex-start;
