@@ -12,7 +12,11 @@ assistant_bp = Blueprint("assistant",__name__)
 def PostResponse():
   data = request.get_json()
   symptoms = data["symptoms"]
-
+  if not symptoms:
+    response = {
+      "error": "Symptoms field is required."
+    }
+    return response
   response = API_response.Api(symptoms)
   data_dict = json.loads(response)
   data_dict["Symptoms"] = symptoms

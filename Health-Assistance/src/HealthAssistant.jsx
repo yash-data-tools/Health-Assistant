@@ -13,8 +13,12 @@ export function HealthAssistant() {
       symptoms
     })
 
-    setResult(response.data);
-    setSymptoms('');
+    if(response.data.error){
+      alert(response.data.error);
+    } else {
+      setResult(response.data);
+      setSymptoms('');
+    }
   }
 
   function enterRequest(event) {
