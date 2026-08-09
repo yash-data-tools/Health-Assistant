@@ -70,7 +70,7 @@ explain** the part they are responsible for.
 Clone the repository:
 
 ``` bash
-git clone <REPOSITORY-URL>
+git clone https://github.com/yash-data-tools/Health-Assistant.git
 cd health-assistant-ai
 ```
 
