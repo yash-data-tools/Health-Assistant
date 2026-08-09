@@ -17,6 +17,8 @@
   gap: 20px;
 }
 
+
+
 .main-image {
   width: 35px;
   
@@ -103,3 +105,17 @@ li::before {
   width: 200px;
 }
 
+@media (max-width:1050px) {
+  .health-assist-page{
+    display: flex;
+    flex-direction: column;
+    padding-top: 750px;
+  }
+
+}
+
+@media (max-width:400px) {
+  .health-assist-page{
+    margin-top: 70px;
+  }
+}

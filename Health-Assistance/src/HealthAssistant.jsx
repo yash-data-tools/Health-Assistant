@@ -45,6 +45,14 @@ export function HealthAssistant() {
             onChange={(e) => setSymptoms(e.target.value)}
             onKeyDown={enterRequest}
           />
+          <input
+            type="text"
+            placeholder="Describe your Symptoms."
+            className="input-box-mobile"
+            value={symptoms}
+            onChange={(e) => setSymptoms(e.target.value)}
+            onKeyDown={enterRequest}
+          />
           <button className="send-button" onClick={sendRequest}>
             <img src="images/send-arrow.png" alt="" className="send-arrow" />
             <span>Send</span>

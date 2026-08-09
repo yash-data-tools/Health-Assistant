@@ -74,3 +74,24 @@
   gap: 10px;
   color: rgb(0, 71, 0);
 }
+
+@media (max-width: 752px) {
+  .section{
+    margin-top: 17px;;
+  }
+  .sidebar{
+    left: -184px;;
+    align-items: end;
+  }
+  .title {
+    display: none;
+    align-items: end;
+  }
+  .information {
+    display: none;
+  }
+
+  .section span {
+    display: none;
+  }
+}

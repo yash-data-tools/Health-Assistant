@@ -54,10 +54,8 @@
 
 .all-recall-box {
   border: 1px solid rgba(0,0,0,0.2);
-  padding: 20px;
-  height: 60px;
-  width: 100px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .recall {
@@ -69,15 +67,15 @@
 }
 
 .final-result {
-  padding: 20px;
+  padding: 15px;
+  height: 150px;
+  width: 150px;
   border: 4px solid rgba(0, 222, 15, 0.23);
-  width: 110px;
-  height: 110px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: rgb(236, 255, 236);
   gap:7px;
 }
@@ -264,4 +262,49 @@
 .number {
   font-size: 13px;
   font-weight: bold;
+}
+
+@media(max-width:1050px){
+  .bmi-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .bmi-details{
+    flex-direction: column;
+  }
+  .bmi-classification{
+    display: none;
+  }
+  .details{
+    gap: 15px;
+  }
+  
+  .normal-condition {
+    display: none;
+  }
+}
+
+@media (max-width:790px) {
+  .final-result{
+    margin: 20px;
+  }
+
+  .recall {
+    margin-top: 20px;
+  }
+
+  .details{
+    gap: 15px;
+  }
+
+  .bmi-page{
+    margin: 110px 20px 0 70px;
+  }
+}
+
+@media (max-width:560px) {
+  .recall{
+    display: flex;
+    flex-direction: column;
+  }
 }

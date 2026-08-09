@@ -340,3 +340,9 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width:740px) {
+  .main{
+    padding-left: 60px;
+  }
+}

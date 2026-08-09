@@ -20,3 +20,9 @@
   width: 24px;
   filter: invert(48%) sepia(82%) saturate(511%) hue-rotate(92deg) brightness(95%) contrast(92%);
 }
+
+@media (max-width:1180px) {
+  .bottom-disclaimer{
+    display: none;
+  }
+}

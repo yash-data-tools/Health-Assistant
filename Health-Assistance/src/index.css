@@ -58,3 +58,11 @@ body {
 .main-page {
   padding-left: 260px;
 }
+
+@media (max-width:750px) {
+  .main-page{
+    padding-left: 75px;
+  }
+
+  .header
+}
