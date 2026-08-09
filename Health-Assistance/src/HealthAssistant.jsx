@@ -15,7 +15,11 @@ export function HealthAssistant() {
 
     if(response.data.error){
       alert(response.data.error);
-    } else {
+    } else if(response.data.replied === "failure"){
+      alert("Give a Valid symptom.")
+      setSymptoms('');
+    }
+    else{
       setResult(response.data);
       setSymptoms('');
     }

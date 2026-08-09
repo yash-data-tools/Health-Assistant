@@ -25,10 +25,12 @@ def Api(symptoms):
   "possibleCauses":[],
   "severity":"",
   "advice":[],
-  "doctor":""
+  "doctor":"",
+  "replied":"success or failure"
   }}
 
   Do not write anything except valid json given in the json above.
+  If the question is valid write success in result but if invalid question write failure.
   '''
 
   # ask

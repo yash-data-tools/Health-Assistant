@@ -20,7 +20,7 @@ def PostResponse():
   response = API_response.Api(symptoms)
   data_dict = json.loads(response)
   data_dict["Symptoms"] = symptoms
-  if "api-error" not in data_dict:
+  if ("api-error" not in data_dict) and (data_dict["replied"] != "failure"):
     insertRetrieveData.insert_into_search(json.dumps(data_dict, indent=4))
 
   return response
