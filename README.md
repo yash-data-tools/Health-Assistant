@@ -54,6 +54,8 @@ SQLite3, C programming, and an AI API**.
                                       small components
 
   **Ritoja**                          HTML & CSS --- History Page
+
+  
   -----------------------------------------------------------------------
 
 ### 🎯 Team Learning Goal
