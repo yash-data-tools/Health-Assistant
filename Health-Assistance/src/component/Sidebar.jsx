@@ -18,7 +18,8 @@ export function Sidebar() {
     },
     {
       image: "images/history.png",
-      title: "History"
+      title: "History",
+      path:"/history"
     },
     {
       image: "images/info.png",

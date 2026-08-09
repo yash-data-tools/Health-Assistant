@@ -23,7 +23,7 @@ def Api(symptoms):
   Return only JSON in this format:
   {{
   "possibleCauses":[],
-  "severity":"",
+  "severity":"Mild or Moderate or Severe",
   "advice":[],
   "doctor":"",
   "replied":"success or failure"
