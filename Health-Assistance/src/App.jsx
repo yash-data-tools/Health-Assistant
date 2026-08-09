@@ -1,5 +1,6 @@
 import { HealthAssistant } from "./HealthAssistant";
 import { BmiCalculator } from "./BmiCalculator";
+import { Histroy } from "./History";
 import { Route, Routes } from "react-router";
 
 export function App() {
@@ -7,6 +8,7 @@ export function App() {
     <Routes>
       <Route path="/" element={<HealthAssistant />} />
       <Route path="/bmi" element={<BmiCalculator />} />
+      <Route path="/history" element={<Histroy />} />
     </Routes>
   );
 }
