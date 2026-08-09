@@ -36,25 +36,26 @@ SQLite3, C programming, and an AI API**.
   -----------------------------------------------------------------------
   Member                              Responsibility
   ----------------------------------- -----------------------------------
-  **Yash Shaw**                       JavaScript, React, C, Python,
+  **Yash Shaw(Leader1)**              --JavaScript, React, C, Python,
                                       Flask, SQLite3, API integration,
                                       HTML, CSS
 
-  **Zaid**                            Flask & Backend
+  **Raid(Leader2)**                   --Python, Flask, SQLite3
 
-  **Soumadip**                        CSS
+  **Shreya**                          --JavaScript basics & React
 
-  **Anjishnu**                        Python & SQLite3
+  **Zaid**                            --Flask & Backend
 
-  **Swastika**                        HTML & CSS --- BMI Calculator
+  **Soumadip**                        --CSS
 
-  **Shreya**                          JavaScript basics & React
+  **Anjishnu**                        --Python & SQLite3
 
-  **Shakshi**                         HTML & CSS --- Disclaimer, Footer &
+  **Swastika**                        --HTML & CSS --- BMI Calculator
+
+  **Shakshi**                         --HTML & CSS --- Disclaimer, Footer &
                                       small components
 
-  **Ritoja**                          HTML & CSS --- History Page
-
+  **Ritoja**                          --HTML & CSS --- History Page
   
   -----------------------------------------------------------------------
 
@@ -63,31 +64,6 @@ SQLite3, C programming, and an AI API**.
 Nobody needs to master an entire technology before contributing. Each
 member should learn enough to **understand, build, modify, test, and
 explain** the part they are responsible for.
-
-## 📁 Project Structure
-
-``` text
-health-assistant-ai/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   └── package.json
-├── backend/
-│   ├── app.py
-│   ├── database.py
-│   ├── routes/
-│   ├── services/
-│   ├── bmi/
-│   └── requirements.txt
-├── database/
-├── README.md
-└── .gitignore
-```
-
-> The structure may change as development continues.
 
 ## 💻 Installation
 
@@ -120,12 +96,14 @@ source venv/bin/activate
 Install dependencies:
 
 ``` bash
+cd ./backend/
 pip install -r requirements.txt
 ```
 
 Run Flask:
 
 ``` bash
+cd ./backend/
 python app.py
 ```
 
@@ -134,7 +112,7 @@ python app.py
 Open another terminal:
 
 ``` bash
-cd frontend
+cd ./Health-Assistance/
 npm install
 npm run dev
 ```
