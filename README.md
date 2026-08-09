@@ -44,6 +44,8 @@ SQLite3, C programming, and an AI API**.
 
   **Shreya**                          --JavaScript basics & React
 
+  **Biswapriya**                      --database, python, SQLite3
+
   **Zaid**                            --Flask & Backend
 
   **Soumadip**                        --CSS
