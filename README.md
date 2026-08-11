@@ -60,6 +60,7 @@ SQLite3, C programming, and an AI API**.
   **Ritoja**                          --HTML & CSS --- History Page
   
   **Assafi**.                         --Python & SQLite3
+
   -----------------------------------------------------------------------
 
 ### 🎯 Team Learning Goal
