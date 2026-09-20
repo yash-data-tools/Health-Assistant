@@ -40,7 +40,7 @@ SQLite3, C programming, and an AI API**.
                                       Flask, SQLite3, API integration,
                                       HTML, CSS
 
-  **Raid(Leader2)**                   --Python, Flask, SQLite3
+  **Raid Mohomud(Leader2)**                   --Python, Flask, SQLite3
 
   **Shreya**                          --JavaScript basics & React
 
